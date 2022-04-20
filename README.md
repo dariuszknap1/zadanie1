@@ -1,30 +1,17 @@
 # zadanie1
-Prosta aplikacja do tworzenia listy zakupów i pokazania aktualnego czasu utworzona z pomocą stosu technologicznego MERN.
-Do uruchomienia aplikacji należy zbudować i uruchomić kontenery odpowiedzialne za część kliencką i serwerową.
+Prosta aplikacja stworzona z pomocą technologii node js i express js prezentująca ip i czas lokalny klienta .
 
 
 Zbudowanie kontenera serwera
 ```
-docker build -t node-server ./server
+sudo docker build -t node-server .
 ```
-Zbudowanie kontenera klienta
-```
-docker build -t node-client ./client
-```
-<br></br>
-
 Uruchomienie kontenera serwera
 ```
-docker run -it -p 2000:2000 node-server
+docker run -it -p 3000:3000 node-server
 ```
-Po uruchomieniu kontener powinien zwrócić w konsoli wiadomość na jakim porcie oczekuje odpowiedzi.
+Po uruchomieniu kontener powinien zwróci w konsoli wiadomość na jakim porcie oczekuje na nas.
 Można zobaczyć tę wiadomość za pomocą polecenia <i>docker logs \<id-kontenera-serwera\></i>
-
-Uruchomienie kontenera klienta
-```
-docker run -p 3000:3000 node-client
-```
-Po uruchomieniu obu kontenerów wystarczy w przeglądarce przejść pod adres localhost:3000
   
   
 <br></br>
@@ -32,4 +19,6 @@ By sprawdzić ile warstw posiada kontener należy użyć polecenia
 ```
 docker history <id-obrazu>
 ```
+
+
 
