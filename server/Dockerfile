@@ -1,7 +1,7 @@
 FROM node:alpine
 COPY . .
 
-RUN ECHO "Dariusz Knap"
+RUN echo "Dariusz Knap"
 
 # Installing dependencies
 WORKDIR /server
