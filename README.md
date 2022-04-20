@@ -19,6 +19,11 @@ By sprawdzić ile warstw posiada kontener należy użyć polecenia
 ```
 docker history <id-obrazu>
 ```
-
+W celu zbudowania obrazu na wiele architektur użyłem poleceń
+```
+docker buildx use multiarchbuilder
+docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
+docker buildx build -t dariuszknap1/zadanie:first --platform linux/arm/v7,linux/arm64/v8,linux/amd64 --push .   
+```
 
 
