@@ -3,7 +3,7 @@ FROM node:alpine
 # skopiowanie lokalnych plików do wnętrza kontenera
 COPY . .
 
-RUN ECHO "Dariusz Knap"
+RUN echo "Dariusz Knap"
 
 # zainstalowanie zależności
 WORKDIR /client
