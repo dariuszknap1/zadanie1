@@ -43,4 +43,4 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: dariuszknap1/lab06:ghfront1
+          tags: dariuszknap1/zadanie1:githubactions
